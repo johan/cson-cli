@@ -1,3 +1,7 @@
+1.0.2
+-----
+* now should install with -g too
+
 1.0.1
 -----
 
