@@ -1,0 +1,15 @@
+#! /bin/sh -x
+
+fail () {
+  echo $@ 2>&1
+  exit 1
+}
+
+cd test
+mkdir -p output
+
+../bin/cson2json some.cson > output/some.json
+diff -u some.json output/some.json || fail 'cson2json produced unexpected json'
+
+../bin/json2cson some.json > output/some.cson
+diff -u same.cson output/some.cson || fail 'json2cson produced unexpected cson'
