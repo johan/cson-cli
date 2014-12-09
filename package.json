@@ -24,7 +24,8 @@
     "email": "oyasumi@gmail.com"
   },
   "dependencies": {
-    "cson-safe": "^1.0.2"
+    "cson-safe": "^1.0.2",
+    "format-json": "^1.0.3"
   },
   "devDependencies": {
     "assertive": "^1.4.1",
