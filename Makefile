@@ -1,6 +1,8 @@
-.PHONY: all clean setup
+.PHONY: all clean setup test
 
-all: clean setup
+all: clean setup test
+
+test:
 	npm test
 
 clean:
